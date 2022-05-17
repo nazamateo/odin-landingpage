@@ -1,0 +1,106 @@
+* {
+}
+body {
+  width: 100%;
+}
+
+header {
+  top: 0%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  margin-left: 5%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+header a img {
+  width: 35%;
+}
+
+header ul {
+  width: 35%;
+  list-style-type: none;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header ul li {
+  width: max-content;
+}
+header a {
+  text-decoration: none;
+}
+
+#about {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+
+.about-left,
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-left {
+  grid-area: left;
+  flex-direction: column;
+  width: 70%;
+}
+.about-right {
+  grid-area: right;
+}
+
+.about-right video {
+  width: 95%;
+  height: auto;
+  margin-right: 25%;
+}
+
+.about-left h1 {
+  font-size: 48px;
+}
+.about-left p {
+  font-size: 18px;
+}
+
+#services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-services-container {
+  display: grid;
+  width: 80%;
+  height: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.card-services {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.card-services img {
+  width: 100%;
+}
+.card-services img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
